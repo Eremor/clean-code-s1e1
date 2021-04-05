@@ -85,7 +85,8 @@ button{
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.task__body--add,
+.task__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,7 +99,8 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.task__body--add:focus,
+.task__text:focus {
   color: #333;
 }
 
@@ -113,7 +115,7 @@ input[type="text"]:focus {
 }
 
 /* Task list */
-li {
+.task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,22 +124,22 @@ li {
   align-items: center;
 }
 
-li > * {
+.task > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.task > .task__checkbox {
   margin: 0 10px;
 }
 
-li > label {
+.task > .task__body {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.task > .task__text {
   width: 226px;
 }
 
@@ -158,15 +160,15 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task .task__text {
   display: none;
 }
 
-.task--edit input[type=text] {
+.task--edit .task__text {
   display: inline-block;
   width: 224px;
 }
 
-.task--edit label {
+.task--edit .task__body {
   display: none;
 }
