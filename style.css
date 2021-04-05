@@ -75,7 +75,7 @@ button{
 
 /* Heading */
 .block-title,
-.block-label {
+.add-task__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -152,7 +152,7 @@ li > input[type="text"] {
 }
 
 /* Completed */
-.completed-tasks label {
+.completed-tasks .task__body {
   text-decoration: line-through;
   color: #888;
 }
@@ -162,11 +162,11 @@ ul li input[type=text] {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.task--edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.task--edit label {
   display: none;
 }
