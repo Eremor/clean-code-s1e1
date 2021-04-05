@@ -1,46 +1,8 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
-}
-
-.header {
-  width: 500px;
-  margin: 0 auto;
-  display: block;
-  text-align: right;
-}
-
-.header img {
-  width: 100%;
-}
-
-.more-inf {
-  font-family: fantasy, cursive;
-}
-
-@media (max-width: 768px) {
-  
-  .header {
-    text-align: center;
-  }
-}
-
-.wrapper {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
-
-.task-body {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
-
-.add-task-item {
-  display: flex;
 }
 
 ul {
@@ -58,9 +20,46 @@ button{
   outline: none;
 }
 
-.button-add,
-.button-edit,
-.button-delete {
+.header {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.header__info {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width: 768px) {
+  
+  .header {
+    text-align: center;
+  }
+}
+
+.wrapper {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.task__body,
+.task__text {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.task--add {
+  display: flex;
+}
+
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -70,9 +69,7 @@ button{
   cursor: pointer;
 }
 
-.button-add:hover,
-.button-edit:hover,
-.button-delete:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
@@ -106,12 +103,12 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-.add-task .block-title {
+.add-task__title {
   display: block;
   margin: 0 0 20px;
 }
 
-.add-task-item .task-body {
+.task__body--add {
   width: 318px;
 }
 
@@ -144,13 +141,13 @@ li > input[type="text"] {
   width: 226px;
 }
 
-.button-delete img {
+.button__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-delete img:hover {
+.button__image:hover {
   transform: rotateZ(0);
 }
 
